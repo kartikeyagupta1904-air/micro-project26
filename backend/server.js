@@ -18,7 +18,9 @@ app.use(helmet());
 app.use(cors({ origin: (process.env.CORS_ORIGIN || 'http://localhost:5500').split(',').map(s => s.trim()) }));
 app.use(express.json({ limit: '100kb' }));
 
-const db = new Database(path.join(__dirname, 'granthalaya.db'));
+const db = new Database(
+process.env.DB_path||
+path.join(__dirname, 'granthalaya.db'));
 db.pragma('journal_mode = WAL');
 db.pragma('foreign_keys = ON');
 db.exec(`
