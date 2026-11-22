@@ -1,0 +1,11 @@
+/* Granthalaya v5: MITS branding, branch filters, About page */
+.lbrand+.inst{margin:-6px 0 4px;font-size:14px;line-height:1.5;color:#dfe6ff;max-width:34em}
+.lbrand+.inst span{font-family:"Noto Sans Devanagari",Figtree,sans-serif;font-weight:600;color:var(--sun)}
+.abt p{margin:10px 0 0;max-width:72ch}
+.tb select{max-width:260px}
+td .tag+*{margin-left:2px}
+#tbl>.sub{margin:0 0 8px}
+.tb .tg input{flex:none;min-width:0;width:auto}.tb .tg{margin-top:0}
+aside{overflow-y:auto;scrollbar-width:thin}
+@media(min-width:861px) and (max-height:960px){aside .rules{display:none}}
+.me small{display:block}
